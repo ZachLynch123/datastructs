@@ -20,7 +20,7 @@ class Queue {
     }
     // Get length of Queue
     length() {
-        return this.elemets.length;
+       console.log(this.elemets.length);
     }
 
 }
@@ -28,10 +28,12 @@ class Queue {
 let queue = new Queue();
 // Simple for loop to add 7 elements to queue
 for (let i = 1; i <= 7; i++) {
-    q.enqueue(i);
+    queue.enqueue(i);
 }
-console.log(q.length);
-
+queue.length()
+queue.isEmpty()
+queue.dequeue();
+queue.length();
 
 
 
