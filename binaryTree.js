@@ -23,7 +23,7 @@ class Tree {
             return;
         }
         else {
-            // 
+            // recursive function that searches for null node in tree
             const searchTree = (node) => {
                 if (data < node.data) {
                     if (node.left === null) {
