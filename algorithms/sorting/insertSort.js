@@ -17,3 +17,13 @@ const minAndRemove = (array) => {
     array.splice(minIndex, 1);
     return min;
 }
+
+const selectionSort = (array) => {
+    let newMin;
+    let sorted = [];
+    while (array.length != 0) {
+        newMin = minAndRemove(array);
+        sorted.push(newMin);
+    }
+    return sorted;
+}
